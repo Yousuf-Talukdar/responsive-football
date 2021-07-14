@@ -1,0 +1,277 @@
+/* fonts style  area*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* banner styles area*/
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    font-size: 40px;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-banner-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-description{
+    text-align: justify;
+}
+.banner img:hover{
+    transform: rotate3d(0,1,0,180deg);
+    transition: 3s;
+}
+.link-button {
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.top-banner {
+    display: flex;
+    background-color: #2D25A0;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.color-change {
+    color: white;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 556.01px;
+    height: 500px;
+}
+
+
+/* top players style area */
+
+.top-players {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.player {
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+
+.player:hover img {
+    transform: scale(1.1);
+    transition: transform, 2s;
+}
+
+.player img {
+    width: 300px;
+    height: 256px;
+    padding-top: 50px;
+}
+
+.players .player-name {
+    font-size: 28px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.players p {
+    margin: 0px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+/* highlights styles */
+
+h2 {
+    font-size: 48px;
+    line-height: 20px;
+}
+
+.match-highlights {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlighghts-title {
+    width: 500px;
+}
+
+.highlighghts-title p {
+    font-size: 20px;
+    color: #6C6C6C;
+}
+
+.highlighght-img img {
+    width: 567px;
+    height: 427px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px lightslategrey;
+}
+
+.best-players, .top-goals {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(241, 142, 12);
+    padding-top: 50px;
+}
+
+.video-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 10px 10px 20px lightslategray;
+}
+
+/* footer styles */
+
+footer {
+    margin-top: 100px;
+}
+
+footer img {
+    width: 480px;
+    height: 110px;
+}
+
+.fa-facebook {
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+}
+
+.fa-facebook-messenger {
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+}
+
+.fa-twitter-square {
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+}
+
+.fa-youtube {
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+}
+
+.icon {
+    text-align: center;
+    margin: 10px;
+    color: #6C6C6C;
+}
+.icon a{
+    text-decoration: none;
+    color: #6C6C6C;
+}
+footer p {
+    text-align: center;
+    font-size: 20px;
+}
+
+footer .footer-logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* media queries */
+
+/* mobile devices area */
+
+@media only screen and (max-width:480px) {
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        font-size: 20px;
+        line-height: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner {
+        margin-top: 50px;
+    }
+    .banner img {
+        width: 300px;
+        height: 300px;
+    }
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+       
+    }
+    .match-highlights {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .highlighghts-title {
+        width: 350px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 20px;
+    }
+    .highlighghts-title p {
+        font-size: 15px;
+        color: #6C6C6C;
+    }
+    .highlighght-img {
+        margin-top: 50px;
+    }
+    .highlighght-img img {
+        width: 300px;
+        height: 250px;
+    }
+    .best-players{
+        line-height: 30px;
+    }
+    footer img {
+        width: 250px;
+        height: 110px;
+    }
+}
